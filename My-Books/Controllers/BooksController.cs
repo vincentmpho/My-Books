@@ -55,6 +55,7 @@ namespace My_Books.Controllers
         {
             // Update an existing book with new data based on its id
             var existingBook = _booksRepository.GetBookById(id);
+
             if (existingBook == null)
             {
                 return NotFound();
